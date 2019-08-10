@@ -1,0 +1,28 @@
+﻿{
+  "configurations": [
+    {
+      "name": "x86-Debug",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "inheritEnvironments": [ "msvc_x86_x64" ],
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-v",
+      "ctestCommandArgs": "",
+      "cmakeToolchain": "D:/Projects/Libraries/vcpkg/scripts/buildsystems/vcpkg.cmake",
+      "variables": [
+        {
+          "name": "Eigen3_DIR",
+          "value": "D:/Projects/Libraries/vcpkg/buildtrees/eigen3",
+          "type": "PATH"
+        },
+        {
+          "name": "VCPKG_TARGET_TRIPLET",
+          "value": "x86-windows",
+          "type": "STRING"
+        }
+      ]
+    }
+  ]
+}
